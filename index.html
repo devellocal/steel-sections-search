@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Section Filtering (US - SI)</title>
+  </head>
+  <body class="bg-gray-800 text-white">
+    <nav class="bg-gray-900 p-4 mb-6">
+      <div
+        class="container max-w-6xl mx-auto flex flex-col sm:flex-row gap-8 items-center"
+      >
+        <div class="relative w-full">
+          <input
+            type="text"
+            id="search"
+            class="bg-gray-700 rounded-full p-2 pl-10 transition focus:w-full"
+            placeholder="Search sections..."
+          />
+          <svg
+            class="absolute left-2 top-1/2 -translate-y-1/2"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M10 10m-7 0a7 7 0 1 0 14 0a7 7 0 1 0 -14 0" />
+            <path d="M21 21l-6 -6" />
+          </svg>
+        </div>
+      </div>
+    </nav>
+
+    <main class="container mx-auto max-w-6xl">
+      <div class="grid grid-col-4 grid-flow-col gap-4 mb-2">
+        <div>SECTION</div> 
+        <div><var>A</var> (in<sup>2</sup>)</div> 
+        <div><var>d</var> (in)</div> 
+        <div><var>t<sub>w</sub></var> (in)</div> 
+        <div><var>b<sub>f</sub></var> (in)</div> 
+        <div><var>t<sub>f</sub></var> (in)</div> 
+        <div><var>k<sub>des</sub></var> (in)</div>
+        <div><var>I<sub>x</sub></var> (in<sup>4</sup>)</div> 
+        <div><var>S<sub>x</sub></var> (in<sup>3</sup>)</div> 
+        <div><var>r<sub>x</sub></var> (in)</div> 
+        <div><var>Z<sub>x</sub></var> (in<sup>3</sup>)</div>
+        <div><var>I<sub>y</sub></var> (in<sup>4</sup>)</div> 
+        <div><var>S<sub>y</sub></var> (in<sup>3</sup>)</div> 
+        <div><var>r<sub>y</sub></var> (in)</div> 
+        <div><var>Z<sub>y</sub></var> (in<sup>3</sup>)</div>
+        <div><var>r<sub>ts</sub></var> (in)</div> 
+        <div><var>h<sub>o</sub></var> (in)</div> 
+        <div><var>J</var> (in<sup>4</sup>)</div> 
+        <div><var>C<sub>w</sub></var> (in<sup>6</sup>)</div> 
+      </div>
+      <hr>
+      <div id="sections-wrapper"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
